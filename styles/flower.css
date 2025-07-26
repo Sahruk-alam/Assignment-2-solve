@@ -2,6 +2,9 @@
 header,body{
     max-width:1140px ;
 }
+footer{
+   width: 1440px;
+}
 .inter-font {
   font-family: "Inter", sans-serif;
 }
@@ -13,8 +16,9 @@ header,body{
 .navigation{
     justify-content: space-between;
     align-items: center;
+    
 }
-ul{
+.navigation ul{
     list-style: none;
     display: flex;
 }
@@ -23,10 +27,10 @@ ul{
     margin-right: 48px;
 
 }
-li a{
+.navigation li a{
     text-decoration: none;
 }
-ul li img{
+.navigation ul li img{
     width: 22px;
     height: 18px;
 }
@@ -47,7 +51,7 @@ ul li img{
 }
 /* Fresh section */
 .fresh{
-    margin-top: 120px;
+    margin-top:0px;
     display: flex;
     height: 461px;
     width: 1140px;
@@ -131,12 +135,67 @@ width: 570px;
     font-weight: 600;
     border: none;
 }
-@media screen and(max-width:576px) {
-    .navigation ul{
-        flex-direction: column;
-    }
-    .fresh-container{
-        flex-direction: column-reverse;
+/* Lover */
+.loved-section{
+    margin-top: 160px;
+    gap: 60px;
+    position: relative;
+}
+.describe{
+margin:0 auto;
+}
+.sub-title-describe{
+display: grid;
+grid-template-columns: 1fr;
+
+}
+.love-write{
+   width: 540px; 
+}
+.love-title{
+    width:540px;
+    font-size: 3.03rem;
+    font-weight: bold;
+}
+.lover img{
+    width: 540px;
+}
+.trust img{
+    width: 286px;
+    height: 286px;
+    top: 0;
+    
+     position: absolute;
+    transform: translateX(-290%); 
+    
+    /* transform: translateY(-90%); */
+    z-index: 10;
+    /* joins */}
+
+    .join{
+        background-image: url("../assets/news-letter-bg.png");
+        height: 533px;
         
     }
+    .branch{
+        font-size: 3.05rem;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+#email{
+    width: 644px;
+    height: 50px;
+}
+.mid-branch{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+@media screen and (max-width:576px) {
+    .item a{
+        display: none;
+    }
+.fresh-container{
+    margin-top:0px;
+}
 }
