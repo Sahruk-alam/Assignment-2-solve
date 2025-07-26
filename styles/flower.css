@@ -1,9 +1,11 @@
 
-header,body{
-    max-width:1140px ;
+header,main{
+    width:1140px ;
+    margin-left: 150px;
 }
 footer{
    width: 1440px;
+  
 }
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -175,6 +177,8 @@ grid-template-columns: 1fr;
     .join{
         background-image: url("../assets/news-letter-bg.png");
         height: 533px;
+        position: relative;
+        margin-top: 120px;
         
     }
     .branch{
@@ -187,9 +191,47 @@ grid-template-columns: 1fr;
     height: 50px;
 }
 .mid-branch{
-    justify-content: center;
+    /* width: 830px; */
+    position: absolute;
+  /* margin:190px auto ; */
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: inline; */
+    
+}
+.input{
+    display: flex;
+}
+/* footer part */
+.footer{
+    gap: 30px;
+    justify-content: center;
+    margin-top: 70px;
+}
+.sub-foot li  {
+list-style: none;
+
+}
+.sub-foot li a{
+text-decoration: none;
+}
+.main-footer{
+
+}
+.sub-foot-head{
+    width:355px ;
+}
+.sub-foot-icon{
+    display: flex;
+    gap: 24px;
+    width: 36px;
+    height: 36px;
+}
+.sub-foot li{
+    margin-bottom: 26px;
 }
 @media screen and (max-width:576px) {
     .item a{
