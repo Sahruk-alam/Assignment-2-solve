@@ -104,17 +104,22 @@ width: 570px;
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
     gap: 25px;
+    width: 100%;
+    
 }
 .card{
     /* border: 1px solid black; */
-    width: 270px;
+    width: 100%;
     text-align: center;
     /* margin-top: 0 auto; */
 
 }
 .card img{
-    width: 270px;
-    height: 322px;
+    /* width: 270px; */
+    width: 100%;
+    /* height: 322px; */
+    height: auto;
+    object-fit: cover;
 }
 .lily{
    font-size: 1.2rem;
@@ -141,15 +146,18 @@ width: 570px;
 .loved-section{
     margin-top: 160px;
     gap: 60px;
-    position: relative;
+    /* position: relative; */
 }
 .describe{
-margin:0 auto;
+    margin:0 auto;
 }
 .sub-title-describe{
-display: grid;
-grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
 
+}
+.lover{
+    position: relative;
 }
 .love-write{
    width: 540px; 
@@ -165,13 +173,9 @@ grid-template-columns: 1fr;
 .trust img{
     width: 286px;
     height: 286px;
-    top: 0;
-    
+    top: -100px;
+    left: 350px;
      position: absolute;
-    transform: translateX(-290%); 
-    
-    /* transform: translateY(-90%); */
-    z-index: 10;
 }
 
 /* latest deals */
@@ -183,6 +187,12 @@ grid-template-columns: 1fr;
 
 margin-left: 300px;
 }
+.latest-para{
+   max-width: 888px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 /* box part */
 .discount{
     margin-top: 100px;
@@ -254,6 +264,16 @@ margin-left: 300px;
     font-size: 1rem;
     color: #FFFFFF;
 }
+.zabo{
+    font-size:2.5rem ;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.now{
+    font-size:1.8rem ; 
+    font-weight: 600;
+    color: #FFFFFF;
+}
 
     /* joins */
 
@@ -312,10 +332,123 @@ text-decoration: none;
     margin-bottom: 26px;
 }
 @media screen and (max-width:576px) {
+    header, main, footer {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #cart{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+    justify-content: space-around;
+
+  }
     .item a{
         display: none;
     }
+.fresh{
+    flex-direction: column-reverse;
+    margin-top: 128px;
+    width: 100%;
+    /* height: auto; */
+}
+.fresh-img{
+    width: 100%; 
+    height:auto;
+    margin-top: 0px;
+}
 .fresh-container{
     margin-top:0px;
+    width: 100%;
+}
+.fresh-title{
+    font-size: 2.4rem;
+    width: 100%;
+}
+.fresh-description{
+    font-size: .93rem;
+    width: 100%;
+}
+/* our plants */
+.titles{
+    font-size: 1.5rem;
+}
+.para{
+    width: 100%;
+    font-size: .93rem;
+    text-align: center;
+}
+.title-plants{
+    width: 100%;
+    margin-left: 0;
+}
+.cards{
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-columns:repeat(2,1fr) ;
+    
+    /* grid-template-columns: 1fr; */
+    grid-template-rows:repeat(6,1fr) ;
+    /* width: 100%; */
+    justify-content: center;
+    column-gap:0px;
+    margin-left: 15px;
+}
+    
+.card{
+  width: 171px;
+    
+}
+.card:nth-last-child(1),
+    .card:nth-last-child(2) {
+        display:none;
+    }
+.btn{
+    width: 171px;
+    height: 50px;
+    font-size: 16px;
+    padding: 19px 30px;
+}
+/* loved section */
+.loved-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.trust{
+    display: none;
+}
+.lover img{
+width: 100%;
+}
+.love-title{
+    font-size: 1.5rem;
+    width: 100%; 
+}
+.describe{
+    font-size: .93rem;
+    width: 100%;
+}
+.love-write{
+   width: 385px; 
+}
+.latest-head{
+    font-size: 1.5rem;
+}
+.discount{
+    display: flex;
+    flex-direction: column;
+    width: !00%;
+    height: auto;
+}
+.box{
+    width: 368px;
+    height: 177px; 
+}
+.zabo{
+    font-size:1.04rem ;
+}
+.now{
+    font-size: 1rem;
 }
 }
