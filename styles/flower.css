@@ -333,16 +333,18 @@ text-decoration: none;
     margin-bottom: 26px;
 }
 @media screen and (max-width:576px) {
+  .inter-font{
+    margin-left: 0px;
+  }
     header, main, footer {
     width: 100%;
     margin-left: 0px;
   }
+  .navigation img{
+    margin-left: 16px;
+  }
   #cart{
-  display: flex;
-  flex-direction: row;
-  flex-flow: row;
-    justify-content: space-around;
-
+   margin-left: -100px;
   }
     .item a{
         display: none;
@@ -351,16 +353,17 @@ text-decoration: none;
     flex-direction: column-reverse;
     margin-top: 128px;
     width: 100%;
-    /* height: auto; */
 }
 .fresh-img{
-    width: 100%; 
+    width: 100vw; 
     height:auto;
     margin-top: 0px;
 }
 .fresh-container{
     margin-top:0px;
     width: 100%;
+    margin-right: 0px;
+    margin-left: 12px;
 }
 .fresh-title{
     font-size: 2.4rem;
@@ -385,12 +388,10 @@ text-decoration: none;
 }
 .cards{
     display: grid;
-
     grid-template-columns:repeat(2,1fr) ;
-    grid-template-rows:repeat(6,1fr) ;
     justify-content: center;
     column-gap:0px;
-    margin-left: 15px;
+    margin-left: 16px;
 }
     
 .card{
@@ -411,11 +412,13 @@ text-decoration: none;
     display: flex;
     flex-direction: column;
     margin-top: 0px;
+    margin-left: 8px;
 }
 .trust{
     display: none;
 }
 .lover img{
+   margin-top: 40px; 
 width: 100%;
 }
 .love-title{
@@ -436,7 +439,8 @@ width: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+     height: auto;
+    align-items: center;
 }
 .box{
     width: 368px;
@@ -449,9 +453,14 @@ width: 100%;
     font-size: 1rem;
 }
 /* Joins */
-.join{
-    width: 100%;
-    /* height: auto; */
+.join{   
+     height:275px ; 
+     background-image: url("../assets/news-letter-bg.png");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 100vw;
+  
 }
 .branch{
     font-size: 1.25rem;
@@ -460,16 +469,23 @@ width: 100%;
     width: 321px;
 }
 .footer{
-    /* display: flex; */
     flex-direction: column;
+    gap: 0px;
+    margin-bottom: 45px;
+    padding-left:20px ;
 }
 .color-1{
     font-size: 1rem;
 }
-.sub-foot{
+.sub-foot li{
+    margin-bottom: 20px;
+}
+.sub-foot ul{
+    padding-left:0px ;
     margin-top: 0px;
 }
 #email{
     height:45px ;
 }
+
 }
