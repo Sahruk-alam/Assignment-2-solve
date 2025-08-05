@@ -1,11 +1,10 @@
-
-header,main{
-    width:1140px ;
-    margin-left: 150px;
+body{
+    width: 100%;
+    margin: 0px;
 }
-footer{
-   width: 1440px;
-  
+header,main{
+    margin-left: 150px;
+    margin-right: 150px;
 }
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -17,17 +16,14 @@ footer{
 
 .navigation{
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
 .navigation ul{
     list-style: none;
     display: flex;
 }
-
 .item{
     margin-right: 48px;
-
 }
 .navigation li a{
     text-decoration: none;
@@ -55,10 +51,7 @@ footer{
 .fresh{
     margin-top:0px;
     display: flex;
-    height: 461px;
-    width: 1140px;
     justify-content: space-between;
-
 }
 .fresh-container{
     height: 297px;
@@ -89,8 +82,7 @@ width: 570px;
 }
 /* plants part */
 .title-plants{
- text-align: center; 
-    margin: 0 130px;
+ justify-items: center;
 }
 .para{
     width: 888px;
@@ -104,20 +96,15 @@ width: 570px;
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
     gap: 25px;
-    width: 100%;
     
 }
 .card{
-    /* border: 1px solid black; */
     width: 100%;
     text-align: center;
-    /* margin-top: 0 auto; */
 
 }
 .card img{
-    /* width: 270px; */
     width: 100%;
-    /* height: 322px; */
     height: auto;
     object-fit: cover;
 }
@@ -146,7 +133,7 @@ width: 570px;
 .loved-section{
     margin-top: 160px;
     gap: 60px;
-    /* position: relative; */
+    justify-content: center;
 }
 .describe{
     margin:0 auto;
@@ -198,6 +185,7 @@ margin-left: 300px;
 .discount{
     margin-top: 100px;
     gap: 28px;
+    justify-content: center;
 }
 .offer{
     /* gap: 28px; */
@@ -283,7 +271,9 @@ margin-left: 300px;
         height: 533px;
         position: relative;
         margin-top: 120px;
-        
+        background-repeat: no-repeat;
+        background-size: cover;         
+        background-position: center;   
     }
     .branch{
         font-size: 3.05rem;
@@ -334,7 +324,7 @@ text-decoration: none;
 }
 @media screen and (max-width:576px) {
   .inter-font{
-    margin-left: 0px;
+    margin-right: 0px;
   }
     header, main, footer {
     width: 100%;
@@ -419,7 +409,8 @@ text-decoration: none;
 }
 .lover img{
    margin-top: 40px; 
-width: 100%;
+   width: 100%;
+   margin-right: 30px;
 }
 .love-title{
     font-size: 1.5rem;
@@ -460,7 +451,6 @@ width: 100%;
      background-position: center;
      background-repeat: no-repeat;
      width: 100vw;
-  
 }
 .branch{
     font-size: 1.25rem;
